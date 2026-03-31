@@ -31,23 +31,20 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl md:text-6xl font-black font-mono tracking-tighter text-foreground"
+            className="text-4xl md:text-5xl lg:text-6xl font-black font-mono tracking-tighter text-foreground"
           >
-            Engenharia escalável
+            Kauê Rian — Full Stack Developer & Cloud Infrastructure
             <br />
-            para <span className="text-emerald-500">produtos globais.</span>
+            <span className="text-emerald-500 text-3xl md:text-5xl lg:text-6xl block mt-2">Engenharia escalável para produtos globais.</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl"
+            className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mt-4"
           >
-            Sou <strong className="text-foreground">Kauê Rian</strong>, um Desenvolvedor Full Stack
-            focado na construção de sistemas performáticos. De arquiteturas
-            <span className="italic"> Serverless</span> com AWS a UIs robustas
-            nascidas no ecossistema React/Next.js.
+            Sou <strong className="text-foreground">Kauê Rian</strong>, um Desenvolvedor Full Stack focado na construção de sistemas performáticos. De arquiteturas Serverless e Cloud a UIs robustas nascidas no ecossistema React/Next.js.
           </motion.p>
         </div>
 

@@ -102,17 +102,9 @@ export default function AchaAiCaseStudy() {
             </p>
           </div>
           <div className="p-8 bg-card border border-border rounded-lg shadow-subtle flex flex-col items-center justify-center gap-6 min-h-[300px]">
-            {/* Diagram Placeholder */}
-            <div className="flex gap-4 items-center">
-              <Cloud className="w-12 h-12 text-blue-500" />
-              <ArrowLeft className="w-6 h-6 text-muted-foreground" />
-              <Server className="w-12 h-12 text-emerald-500" />
-              <ArrowLeft className="w-6 h-6 text-muted-foreground" />
-              <Database className="w-12 h-12 text-orange-500" />
+            <div className="flex flex-wrap gap-4 items-center justify-center text-emerald-500 font-mono text-sm max-w-full overflow-hidden text-center">
+              <span>WhatsApp</span> ↔ <span>Cloudflare Workers (IA)</span> ↔ <span>Oracle OCI (Docker/WAHA)</span> ↔ <span>Supabase & Sentry</span>
             </div>
-            <p className="text-sm text-balance text-center text-muted-foreground font-mono">
-              Cloudflare (Edge) → Oracle OCI (Docker Instances) → RDS (PostgreSQL)
-            </p>
           </div>
         </div>
 

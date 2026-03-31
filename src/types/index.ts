@@ -7,7 +7,7 @@ export interface SkillCategory {
 
 export interface Skill {
   name: string;
-  level: "domínio" | "sólida" | "intermediário" | "básico";
+  level: "domínio" | "avançado" | "sólida" | "intermediário" | "básico";
   highlight?: boolean;
 }
 
