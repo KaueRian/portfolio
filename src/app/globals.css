@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Emerald base */
+  --color-emerald-500: #10b981;
+  --color-emerald-600: #059669;
+
+  /* Card and Borders */
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  /* Geometry Constraints - Sharp by default */
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.5rem;
+
+  /* Engineered shadows */
+  --shadow-subtle: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-glow: 0 0 20px -5px var(--accent-glow);
+}
+
+/* Base Light Theme */
+:root {
+  --background: #fafafa;
+  --foreground: #09090b;
+
+  --card: #ffffff;
+  --border: #e4e4e7;
+  
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+
+  --accent-glow: rgba(16, 185, 129, 0.15); /* emerald-500/15 */
+}
+
+/* Dark Theme */
+.dark {
+  --background: #09090b; /* Zinc 950 */
+  --foreground: #fafafa; /* Zinc 50 */
+
+  --card: #0c0c0e; /* Slightly lighter than bg */
+  --border: #27272a; /* Zinc 800 */
+  
+  --muted: #18181b; /* Zinc 900 */
+  --muted-foreground: #a1a1aa; /* Zinc 400 */
+
+  --accent-glow: rgba(16, 185, 129, 0.2); /* emerald-500/20 */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+/* Custom Scrollbar for engineered look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-muted-foreground/30 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground/50;
+}
