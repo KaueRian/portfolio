@@ -6,10 +6,9 @@ frontend:
         - nvm use 20
         - npm ci
         - npm run build
-        - rm -rf .next
     build:
       commands:
-        - echo "Static site ready in preBuild"
+        - echo "Static build verified."
   artifacts:
     baseDirectory: out
     files:
