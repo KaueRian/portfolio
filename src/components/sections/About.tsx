@@ -26,12 +26,12 @@ export function About({ isActive }: AboutProps) {
         <ul className="clients-list">
           <li className="clients-item">
             <a href="#">
-              <Image src="/images/nortech.png" alt="Nortech" width={300} height={120} style={{ width: 'auto', height: '120px' }} />
+              <Image src="/images/nortech.png" alt="Nortech" width={300} height={120} style={{ width: 'auto', height: 'auto', maxHeight: '120px' }} />
             </a>
           </li>
           <li className="clients-item">
             <a href="#">
-              <Image src="/images/prefeitura-municipal-ariquemes.png" alt="Prefeitura Municipal de Ariquemes" width={300} height={120} style={{ width: 'auto', height: '120px' }} />
+              <Image src="/images/prefeitura-municipal-ariquemes.png" alt="Prefeitura Municipal de Ariquemes" width={300} height={120} style={{ width: 'auto', height: 'auto', maxHeight: '120px' }} />
             </a>
           </li>
         </ul>
