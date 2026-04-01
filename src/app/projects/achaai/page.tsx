@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, ExternalLink, Server, Database, Cloud, Lock, Globe } from "lucide-react";
+import { ArrowLeft, Server, Database, Cloud, Globe } from "lucide-react";
 import { Section } from "@/components/layout/Section";
 import { GithubIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Case Study: AchaAí | Kauê Rian",
+  title: "AchaAí | Kauê Rian",
   description: "Arquitetura e desenvolvimento da plataforma escalonável AchaAí.",
 };
 
@@ -24,10 +24,10 @@ export default function AchaAiCaseStudy() {
 
         <div className="space-y-6">
           <h1 className="text-4xl md:text-5xl font-black font-mono tracking-tighter text-foreground">
-            AchaAí — Assistente de Compras IA & E-commerce Local
+            AchaAí — Assistente de Compras com IA
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl leading-relaxed">
-            Desenvolvimento de ponta a ponta de um ecossistema focado no usuário final, combinando Inteligência Artificial, integrações complexas com WhatsApp e arquitetura de microsserviços.
+            Desenvolvimento de um ecossistema focado no usuário final, combinando Inteligência Artificial, integrações com WhatsApp e arquitetura de microsserviços.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-4">
@@ -57,10 +57,10 @@ export default function AchaAiCaseStudy() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <h4 className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-4 font-mono">
-              Role
+              Cargo
             </h4>
             <p className="text-sm font-medium text-foreground">
-              Co-Fundador, Lead Full Stack & Cloud Infra
+              Co-Fundador, Cloud Infra & Full Stack
             </p>
           </div>
           <div>
@@ -98,7 +98,7 @@ export default function AchaAiCaseStudy() {
               O Desafio
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              O sistema demandava uma solução inovadora para o comércio local: permitir que os usuários buscassem produtos diretamente pelo WhatsApp usando linguagem natural (IA), sem a necessidade de baixar aplicativos. O grande desafio técnico era orquestrar a sessão persistente do WhatsApp, garantir tempo de resposta em milissegundos na busca de produtos e criar um painel administrativo robusto para os lojistas, tudo sob uma arquitetura escalável e de baixo custo.
+              O projeto nasceu como o vencedor do Hackathon 2025 do IFRO Campus Ariquemes. O problema proposto era: <i>&quot;Como encontrar um produto específico no comércio físico da cidade sem depender de buscas genéricas na internet?&quot;</i>. Nossa equipe inovou ao levar a solução para onde o usuário já está: o WhatsApp. Para transformar essa ideia premiada em um produto real, o desafio técnico passou a ser orquestrar sessões persistentes do whatsapp, integrar IA para processar linguagem natural em milissegundos e construir um painel administrativo robusto para os lojistas.
             </p>
           </div>
           <div className="p-8 bg-card border border-border rounded-lg shadow-subtle flex flex-col items-center justify-center gap-6 min-h-[300px]">
@@ -118,9 +118,9 @@ export default function AchaAiCaseStudy() {
               <div className="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center">
                 <Cloud className="w-5 h-5 text-emerald-500" />
               </div>
-              <h3 className="text-xl font-bold text-foreground">Edge Computing & IA (O Cérebro)</h3>
+              <h3 className="text-xl font-bold text-foreground">Computação de Borda & IA</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Utilização de Cloudflare Workers (Serverless) para receber os webhooks do WhatsApp, processar a intenção do usuário usando Modelos de Linguagem (Workers AI) e consultar o catálogo de produtos instantaneamente via MeiliSearch, garantindo latência zero na borda.
+                Utilização de Cloudflare Workers (Serverless) para processar a intenção do usuário via IA e consultar o catálogo de produtos do comércio local em milissegundos utilizando MeiliSearch.
               </p>
             </div>
 
@@ -130,7 +130,7 @@ export default function AchaAiCaseStudy() {
               </div>
               <h3 className="text-xl font-bold text-foreground">Infraestrutura Resiliente & Docker</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Como a API do WhatsApp (WAHA / whatsapp-web.js) exige um ambiente persistente com navegador (Chromium) rodando por trás, isolei esse serviço crítico em containers Docker hospedados em uma Máquina Virtual na Oracle Cloud (OCI), comunicando-se de forma segura com os Workers.
+                Para manter a API do WhatsApp estável, desenvolvemos microsserviços em Node.js isolados em containers Docker na Oracle Cloud, garantindo alta disponibilidade e comunicação segura.
               </p>
             </div>
 
@@ -138,9 +138,9 @@ export default function AchaAiCaseStudy() {
               <div className="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center">
                 <Database className="w-5 h-5 text-emerald-500" />
               </div>
-              <h3 className="text-xl font-bold text-foreground">Painel React & Monitoramento Ativo</h3>
+              <h3 className="text-xl font-bold text-foreground">Painel React & Monitoramento</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Construção do portal do lojista utilizando React.js, integrado ao Supabase para autenticação e banco de dados. Para garantir a confiabilidade de todo esse ecossistema em produção, implementei o Sentry em todos os microsserviços, permitindo o rastreamento em tempo real de erros e gargalos de performance.
+                Portal administrativo construído em React.js e Supabase para os lojistas gerenciarem seus catálogos. Todo o ecossistema possui monitoramento ativo de erros e performance em tempo real via Sentry.
               </p>
             </div>
           </div>

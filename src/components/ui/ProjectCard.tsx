@@ -73,7 +73,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           href={project.links.caseStudy}
           className="inline-flex items-center text-sm font-medium text-foreground hover:text-emerald-500 transition-colors"
         >
-          Ler Case Study Completo
+          Ler Completo
           <ExternalLink className="ml-1 h-3 w-3" />
         </Link>
       )}

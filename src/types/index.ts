@@ -40,3 +40,23 @@ export interface SiteMetadata {
   ogImage: string;
   author: string;
 }
+
+export interface ExperienceItem {
+  title: string;
+  company: string;
+  period: string;
+  description: string;
+}
+
+export interface EducationItem {
+  course: string;
+  institution: string;
+  period: string;
+  description: string;
+}
+
+export interface CertificationItem {
+  title: string;
+  issuer: string;
+  description?: string;
+}
