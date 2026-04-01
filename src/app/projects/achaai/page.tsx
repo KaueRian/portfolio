@@ -130,7 +130,7 @@ export default function AchaAiCaseStudy() {
               </div>
               <h3 className="text-xl font-bold text-foreground">Infraestrutura Resiliente & Docker</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Para manter a API do WhatsApp estável, desenvolvemos microsserviços em Node.js isolados em containers Docker na Oracle Cloud, garantindo alta disponibilidade e comunicação segura.
+                Para manter a API do WhatsApp estável, desenvolvemos microsserviços em Node.js isolados em containers Docker na Oracle Cloud, garantindo disponibilidade e comunicação segura.
               </p>
             </div>
 

@@ -5,7 +5,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     title: "Sysadmin",
     company: "Nortech",
     period: "2025/02 — Presente",
-    description: "Gerenciamento de infraestrutura, administração de servidores e redes, garantindo alta disponibilidade, performance e segurança dos sistemas corporativos."
+    description: "Gerenciamento de infraestrutura, administração de servidores e redes, garantindo disponibilidade, performance e segurança dos sistemas corporativos."
   },
   {
     title: "Co-Fundador, Cloud Infra, Full Stack",

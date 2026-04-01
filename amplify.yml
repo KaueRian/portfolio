@@ -5,9 +5,10 @@ frontend:
       commands:
         - nvm use 20
         - npm ci
+        - npm run build
     build:
       commands:
-        - npm run build
+        - echo "Static site ready in preBuild"
   artifacts:
     baseDirectory: out
     files:
